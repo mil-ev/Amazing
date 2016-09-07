@@ -1,0 +1,617 @@
+@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.eot?40610508');
+    src: url('../font/fontello.eot?40610508#iefix') format('embedded-opentype'), url('../font/fontello.woff2?40610508') format('woff2'), url('../font/fontello.woff?40610508') format('woff'), url('../font/fontello.ttf?40610508') format('truetype'), url('../font/fontello.svg?40610508#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+
+
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+
+
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?40610508#fontello') format('svg');
+  }
+}
+*/
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-play:before {
+    content: '\e800';
+}
+
+
+/* '' */
+
+.icon-right-big:before {
+    content: '\e801';
+    font-size: 18px;
+}
+
+
+/* '' */
+
+.icon-twitter:before {
+    content: '\f099';
+    margin-right: 15px;
+}
+
+
+/* '' */
+
+.icon-facebook:before {
+    content: '\f09a';
+    margin-right: 15px;
+}
+
+
+/* '' */
+
+.icon-menu:before {
+    content: '\f0c9';
+    font-size: 30px;
+}
+
+
+/* '' */
+
+.icon-instagram:before {
+    content: '\f16d';
+    margin-right: 15px;
+}
+
+
+/* '' */
+
+.icon-spotify:before {
+    content: '\f1bc';
+    margin-right: 15px;
+}
+
+
+/* '' */
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+* {
+    //    margin: 0;
+    //    padding: 0;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 18px;
+    background: rgba(185, 190, 197, 0.5);
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    background: #f3f1ef;
+}
+
+.main-header {
+    position: relative;
+}
+
+.main-header img {
+    vertical-align: middle;
+}
+
+.logo {
+    position: absolute;
+    top: 10%;
+    left: 13%;
+    color: #fff;
+    background: #000;
+    font-size: 3.33rem;
+    font-weight: bold;
+    width: 5rem;
+    height: 5rem;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.icon-menu {
+    width: 50px;
+    height: 60px;
+    text-align: center;
+    line-height: 1.5;
+    position: absolute;
+    top: 10%;
+    right: 14%;
+    cursor: pointer;
+}
+
+.icon-menu span {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+#id-icon-menu {
+    display: none;
+}
+
+#id-icon-menu:checked~.main-menu {
+    display: block;
+}
+
+.main-menu {
+    display: none;
+    position: absolute;
+    top: 17%;
+    right: 14.5%;
+    font-size: 18px;
+}
+
+.text-header {
+    position: absolute;
+    top: 34%;
+    left: 13%;
+    width: 560px;
+    font-size: 1.67rem;
+    line-height: 1.5;
+    letter-spacing: -.025ex;
+}
+
+.text-header h1 {
+    font-size: 4rem;
+    font-weight: lighter;
+    line-height: normal;
+    margin: 20px auto;
+}
+
+.photo-inline,
+.sportify-itunes {
+    font-size: 0;
+}
+
+.for-inline-block {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.photo-inline div {
+    .for-inline-block;
+}
+
+.photo-inline .photo-50 {
+    width: 50%;
+}
+
+.photo-inline .photo-25 {
+    width: 25%;
+}
+
+.some-h2 {
+    font-size: 1.33rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: normal;
+    margin-bottom: 40px;
+}
+
+.text-after-h2 {
+    font-size: 2rem;
+    letter-spacing: -0.025em;
+}
+
+.photo-inline>div:nth-child(2) {
+    .text-after-h2;
+    color: #666;
+    padding: 6% 3%;
+}
+
+.photo-inline>div:nth-child(2) h2,
+.instagram h2,
+.sportify-itunes h2 {
+    .some-h2;
+}
+
+.instagram {
+    background: #3f729b;
+}
+
+.instagram div:first-child {
+    color: #f9f9f9;
+    .text-after-h2;
+    padding: 5% 5% 6% 12%;
+}
+
+.btn {
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border: 2px solid;
+    border-radius: 40px;
+    padding: 20px;
+    font-size: 1rem;
+    color: #f9f9f9;
+}
+
+body .wrap-btn {
+    margin-top: 35px;
+    display: block;
+}
+
+.dj {
+    position: relative;
+}
+
+.dj img {
+    vertical-align: top;
+}
+
+.to-play {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    background: #212227;
+    color: #f9f9f9;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 6% 3%;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.to-play h2 {
+    .some-h2;
+    color: #2ebd59;
+    margin-bottom: 30px;
+}
+
+.to-play h2 span {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.to-play ul {
+    padding: 0;
+}
+
+.to-play .wrap-btn {
+    margin-top: 60px;
+}
+
+.to-play a {
+    color: #2ebd59;
+    letter-spacing: normal;
+}
+
+.sportify-itunes>div {
+    .for-inline-block;
+    .text-after-h2;
+    width: 50%;
+    color: #f9f9f9;
+}
+
+.sportify-itunes>div:first-child {
+    background: #2ebd59;
+    padding: 7% 6% 9% 13%;
+}
+
+.sportify-itunes>div:last-child {
+    background: #282b2f;
+    padding: 7% 18% 9% 4%;
+}
+
+.sportify-itunes .wrap-btn {
+    margin-top: 60px;
+}
+
+.main-footer {
+    background: #212227;
+    padding: 5% 12%;
+    font-size: 0;
+}
+
+.main-footer>div {
+    .for-inline-block;
+    color: #919191;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.main-footer>div:first-child {
+    width: 23%;
+    margin-right: 9%;
+}
+
+.main-footer>div:nth-child(2) {
+    width: 15%;
+    margin-right: 9%;
+}
+
+.main-footer>div:last-child {
+    width: 39%;
+}
+
+.main-footer h3 {
+    font-size: 1rem;
+    color: #f9f9f9;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.main-footer ul,
+.amazing p:last-child {
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.main-footer p {
+    margin-top: 20px;
+}
+
+.follow h3,
+.sponsor h3 {
+    margin-top: 70px;
+}
+
+.follow li {
+    line-height: 1.7;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-footer form {
+    width: 100%;
+    box-sizing: border-box;
+    background: #4d4e52;
+}
+
+.main-footer input,
+.main-footer button {
+    background: #4d4e52;
+    border: 0;
+    color: #919191;
+    padding: 20px;
+}
+
+.main-footer button {
+    float: right;
+    cursor: pointer;
+    background: transparent;
+}
+
+.main-footer input {
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.sponsor div {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #f4f8fb;
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.main-footer a {
+    color: #919191;
+}
+
+@media only screen and (max-width:1630px) {
+    html {
+        font-size: 13.5px;
+    }
+    body {
+        width: 1170px;
+    }
+}
+
+@media only screen and (max-width:1199px) {
+    html {
+        font-size: 10px;
+    }
+    body {
+        width: 970px;
+    }
+
+    .to-play {
+        left: 24.99%;
+    }
+    .main-footer>div:first-child {
+        width: 28%;
+    }
+    .main-footer>div,
+    .main-footer h3 {
+        font-size: 12px;
+    }
+    .main-footer button {
+        padding: 20px 15px 20px 0;
+    }
+    .sponsor div {
+        width: 60px;
+        height: 60px;
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    body {
+        width: 750px;
+    }
+    .text-header {
+        top: 27%;
+        width: 360px;
+    }
+    .some-h2 {
+        margin-bottom: 25px;
+    }
+    .text-after-h2 {
+        font-size: 1.8rem;
+    }
+    .photo-inline>div:nth-child(2),
+    .instagram div:first-child,
+    .sportify-itunes>div {
+        .text-after-h2;
+    }
+    .photo-inline>div:nth-child(2) h2,
+    .instagram h2,
+    .sportify-itunes h2 {
+        .some-h2;
+    }
+    .instagram div:first-child {
+        padding: 2.5% 3% 6% 5%;
+    }
+    .to-play {
+        padding: 4% 2% 6%;
+        font-size: 13px;
+    }
+    .sportify-itunes>div:first-child {
+        padding: 7% 6% 9% 8%;
+    }
+    .main-footer {
+        padding: 5% 8%;
+    }
+    .sponsor div {
+        margin-right: 10px;
+    }
+    .follow h3,
+    .sponsor h3 {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    body {
+        width: 100%;
+        min-width: 480px;
+    }
+    .main-menu {
+        top: 22%;
+    }
+    .photo-inline .photo-50 {
+        width: 100%;
+    }
+    .photo-inline .photo-25 {
+        width: 50%;
+    }
+    .instagram .photo-25 {
+        display: none;
+    }
+    .to-play {
+        left: 0;
+        width: 50%;
+        padding-bottom: 10%;
+    }
+    .some-h2 {
+        margin-bottom: 20px;
+    }
+    .text-after-h2 {
+        font-size: 1.7rem;
+    }
+    .photo-inline>div:nth-child(2),
+    .instagram div:first-child,
+    .sportify-itunes>div {
+        .text-after-h2;
+    }
+    .photo-inline>div:nth-child(2) h2,
+    .instagram h2,
+    .sportify-itunes h2,
+    .to-play h2 {
+        .some-h2;
+    }
+    .sportify-itunes>div:first-child {
+        padding: 5% 6% 9% 5%;
+    }
+    .sportify-itunes>div:last-child {
+        padding: 5% 10% 9% 4%;
+    }
+    .sportify .wrap-btn,
+    .to-play .wrap-btn {
+        margin-top: 40px;
+    }
+    .main-footer {
+        padding: 5% 5%;
+    }
+    .main-footer>div {
+        display: block;
+    }
+    .main-footer>div:first-child {
+        width: 100%;
+        margin-right: 0;
+    }
+    .main-footer>div:nth-child(2) {
+        width: 100%;
+        margin-right: 0;
+        font-size: 0;
+    }
+    .main-footer>div:last-child {
+        width: 100%;
+    }
+    .main-footer h3 {
+        margin: 20px auto;
+    }
+    .main-footer p {
+        margin-top: auto;
+    }
+    .main-footer>div:nth-child(2)>div {
+        .for-inline-block;
+        width: 50%;
+        font-size: 12px;
+        box-sizing: border-box;
+        padding-right: 10%;
+    }
+}
